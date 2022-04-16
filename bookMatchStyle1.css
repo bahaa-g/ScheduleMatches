@@ -1,0 +1,66 @@
+.match-info{
+    position:absolute;
+    width: 300px;
+    height:350px;
+    left:50%;
+    top:15%;
+    transform: translate(-50%, 0);
+    border-style: solid;
+    border-color: #52a9ff;
+    border-width: 1px;
+    border-radius: 10px;
+	text-decoration: none;
+    background-color: white;
+    color: #52a9ff;
+}
+.match-info ul{
+    display:block;
+    /*left:50%;*/
+    /*transform: translate(-50%, 0);*/
+}
+.match-info li{
+    text-decoration:none;
+    display:block;
+    font-size: 20px;
+    line-height: 2.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#book-match{
+    /* position: absolute; */
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 210px;
+    height: 50px;
+    /*box-shadow: 0 5px 10px 2px rgb(236, 236, 236);*/
+    border-style: solid;
+    border-color: #52a9ff;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color:white;
+	text-decoration: none;
+    color: #52a9ff;
+}
+#book-match p{
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-decoration: none;
+    font-size: 17px;
+}
+#book-match:hover{
+    background-color: #52a9ff;
+    color: white;
+}
+#info{
+    position:absolute;
+    width:140px;
+    height:40px;
+    top:60px;
+    left:100px;
+    text-align:center;
+}

@@ -1,0 +1,8 @@
+<?php
+	session_start();
+	session_unset();
+	if(session_destroy()) // Destroy all sessions
+	{
+		header("Location: index.php"); // Redirect to login page
+	}
+?>

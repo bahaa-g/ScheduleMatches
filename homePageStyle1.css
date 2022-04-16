@@ -1,0 +1,515 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#navBar {
+    position:-webkit-sticky;
+    margin: auto;
+    height: 70px;
+    width: 100%;
+    top: -70px;
+    margin: center;
+    z-index: 2;
+    background-color: black;
+}
+#site-name{
+    position: absolute;
+    color: white;
+    left: 3%;
+    top: 20px;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#navBar ul {
+    /* position: absolute; */
+    position: absolute;
+    width:auto;
+    min-width: 420px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 7px 0px;
+    border-radius: 10px;
+    text-align:center;
+    display: block;
+    margin: auto;
+}
+#navBar li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+#navbar-text, #current-page-text {
+    height: 50px;
+    padding-top: 5px;    
+    display: block;
+    text-align: center;
+	text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#navbar-text:hover, #current-page-text:hover{
+    border-radius: 10px;
+    background-color: rgb(39, 41, 45);
+}
+#current-page-text{
+    color:rgb(251, 216, 48);
+}
+#logout{
+    position:absolute;
+    right: 3%;
+    top: 12px;
+	text-decoration: none;
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#profile-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    right: 3%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 40%;
+}
+#profile-icon:hover{
+    background-color: rgb(39, 41, 45);;
+}
+.profile-drop-down{
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    right: 1%;
+    position: absolute;
+    border-radius: 10px;
+}
+.profile-drop-down ul{
+    padding: 20px;
+}
+.profile-drop-down li{
+    margin-left: 35px;
+    padding: 5px;
+    background-color: red;
+}
+.homeImage{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 0px;
+}
+.homeImage img{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    z-index: -1;
+}
+.bgText{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    z-index: 2;
+}
+.search-container{
+    position: absolute;
+    top: 300px;
+    left: 0%;
+    right: 0%;
+    height: 130px;
+}
+.search-bar{
+    position: relative;
+    left: 10%;
+    right: 10%;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+      opacity: 0.9;
+}
+.username{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 100%;
+    left: 20%;
+    color: black;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.username p{
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translate(0%, -50%);
+}
+.team{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 150px;
+    height: 100%;
+    right: 20%;
+    color: black;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.team p{
+    position: absolute;
+    top: 45%;
+    transform: translate(0%, -50%);
+}
+#small-text-user{
+    position: absolute;
+    left: 50px;
+    bottom: 20%;
+    color: #777777;
+    font-size: 16px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#small-text-team{
+    position: absolute;
+    bottom: 20%;
+    color: #777777;
+    font-size: 16px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25%;
+    width: 1px;
+    background-color: #9c9c9c;
+}
+#contentContainer{
+    min-height: 400px;
+    margin: center;
+    position: relative;
+    right: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px 10px 0px 0px;
+}
+.content-bar{
+     /*background-color: red; */
+}
+.contentHeader{
+    padding-top: 50px;
+    padding-left: 2%;
+    padding-right: 4%;
+    width: 500px;
+    height: 60px;
+    color: black;
+    font-size: 28px;
+    line-height: 1.1428571429;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.button-container{
+    position: absolute;
+    top: 40px;
+    right: 4%;
+    width: 435px;
+    height: 50px;
+}
+#add-button{
+    position: absolute;
+    right: 0;
+    width: 210px;
+    height: 50px;
+    border-style: solid;
+    border-color: #52a9ff;
+    border-width: 1px;
+    border-radius: 10px;
+	text-decoration: none;
+    background-color: white;
+    color: #52a9ff;
+}
+#add-button p{
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    position:absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+	text-decoration: none;
+    white-space: nowrap;
+    font-size: 17px;
+}
+#add-button:hover{
+    background-color: #52a9ff;
+    color: white;
+}
+#add-teammate{
+    position: absolute;
+    left: 0;
+    width: 210px;
+    height: 50px;
+    border-style: solid;
+    border-color: #A4DE02;
+    border-width: 1px;
+    border-radius: 10px;
+    text-align: center;
+	text-decoration: none;
+    color: #A4DE02;
+}
+#add-teammate p{
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.012em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    position:absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+	text-decoration: none;
+    white-space: nowrap;
+    font-size: 17px;
+}
+#add-teammate:hover{
+    background-color: lightgreen;
+    color: white;
+}
+
+.all-content{
+    position: relative;
+    min-height: 400px;
+    right: 0; 
+    overflow: hidden;
+}
+#dummy {
+    margin-top: 70%;
+  }
+.content{
+    position: relative;
+    min-height:400px;
+    top: 40px;
+    left: 0;
+    right: 0;
+}
+.workspace-container{
+    float: left;
+    position: relative;
+    size: 20px;
+    width: 100%;
+    height: 200px;
+}
+.workspace{
+    position: absolute;
+    border-radius: 10px;
+    left: 2%;
+    right: 2%;
+    top: 0;
+    bottom: 15%;
+    background-color: white;
+    box-shadow: 0 5px 10px 2px rgb(236, 236, 236);
+}
+#host-team{
+    position:absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: black;
+    font-size: 40px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#guest-team{
+    position:absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    color: black;
+    font-size: 40px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#vs{
+    position:absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: black;
+    font-size: 40px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#design-image{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+#design-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.create-team{
+    position: absolute;
+     background-color: white; 
+    width: 30%;
+    height: 300px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 2px rgb(236, 236, 236);
+}
+.create-team img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 45px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.create-team p{
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 350;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #b9b9b9;
+}
+#create-team-button{
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0%);
+    width: 94%;
+    height: 50px;
+    border-style: solid;
+    border-color: #bebebe;
+    border-width: 1px;
+    border-radius: 10px;
+	text-decoration: none;
+}
+#create-team-button:hover{
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0%);
+    width: 94%;
+    height: 50px;
+    border-width: 0;
+    border-radius: 10px;
+	text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+#create-team-button:hover p{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#create-team-button p{
+    color: #0e0e0e;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer{
+    position: relative;
+    background-color: #0e0e0e;
+    width: 100%;
+    height: 300px;
+}
+.footer-list{
+    background-color: violet;
+    color: white;
+    border-radius: 10px;
+    display: block;
+}
+.footer-list-element{
+    color: white;
+    float: left;
+    position: relative;
+    size: 20px;
+    width: 300px;
+    height: 40%;
+    min-width: 167px;
+    min-height: 219px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.list-sub{
+    padding-top: 20px;
+    display: block;
+    list-style: none;
+}
+.footer-list-element p{
+    color: white;
+    font-size: 28px;
+    line-height: 1.1428571429;
+    font-weight: 600;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+#link{
+    color: white;
+    font-size: 20px;
+    line-height: 1.1428571429;
+    font-weight: 300;
+    letter-spacing: .007em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
